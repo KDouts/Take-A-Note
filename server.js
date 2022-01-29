@@ -4,7 +4,7 @@ var fs = require("fs")
 
 
 var app = express();
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3001;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -40,7 +40,6 @@ app.post("/api/notes", function (req, res) {
   })
 })
 
-// Pull from db.json
 app.get("/api/notes", function (req, res) {
   fs.readFile(__dirname + "/db/db.json", 'utf8', function (error, data) {
     if (error) {

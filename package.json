@@ -9,7 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "@heroku/buildpack-registry": "^1.0.1",
+    "async-file": "^2.0.2",
+    "cli-ux": "^6.0.8",
+    "express": "^4.16.4",
+    "got": "^12.0.1",
+    "phoenix": "^1.6.6"
   },
   "devDependencies": {
     "heroku": "^7.59.2"
